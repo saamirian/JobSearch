@@ -1,11 +1,13 @@
 import React from "react";
-
 import { Link } from  'react-router-dom';
+import { connect } from "react-redux";
+import  getResult from "../actioncreators/getresult"
+import changeLocation from "../actioncreators/changeLocation";
 
-export default class SearchForm extends React.Component {
+class SearchForm extends React.Component {
 
     render() {
-        console.log(this.props.loadResult);
+        
         return (
          
               <div >
@@ -25,12 +27,30 @@ export default class SearchForm extends React.Component {
                 </div>
                 <div><Link to={`/search`}><button type="submit" onClick={this.props.handleClick}>submit</button></Link></div>
                 
-                
-                
-                
               </div>
               
        );
       }
     }
     
+
+    const mapStateToProps = ({ location }) => ({
+        location
+        
+        
+      });
+    
+    const mapDispatchToProps = dispatch => ({
+      
+        handleLocationChange(event) {
+          dispatch(changeLocation(event.target.value));
+          
+        },
+      
+        handleClick() {
+            dispatch(getResult());
+        }
+        
+      });
+      
+      export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);
