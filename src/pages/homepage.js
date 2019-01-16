@@ -1,4 +1,5 @@
 import React from "react";
+import SearchForm from '../components/searchjob'
 
 
 export default class Search extends React.Component {
@@ -10,7 +11,8 @@ export default class Search extends React.Component {
     return (
      
           <div>
-            test
+            <div>Job Search </div>
+            <div ><SearchForm /></div>
           </div>
           
    );
