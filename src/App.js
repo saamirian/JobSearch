@@ -5,6 +5,7 @@ import Router from './router'
 const Navigation = (props) => <nav>
     <ul>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/alljobs'>All jobs</NavLink></li>
    
     </ul>
 </nav>
