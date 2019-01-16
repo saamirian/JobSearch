@@ -1,0 +1,32 @@
+{
+  "name": "purplebricksfeengineeres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^3.2.1",
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saharamirian/purplebricksfeengineeres.git"
+  },
+  "author": "Sahar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saharamirian/purplebricksfeengineeres/issues"
+  },
+  "homepage": "https://github.com/saharamirian/purplebricksfeengineeres#readme"
+}
