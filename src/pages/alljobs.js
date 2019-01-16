@@ -1,5 +1,6 @@
 import React from "react";
-import axios from 'axios'
+import axios from 'axios';
+import JobsArray from '../components/jobs-array-map';
 
 class AllJobs extends React.Component {
 
@@ -27,7 +28,7 @@ class AllJobs extends React.Component {
     render() {
        
         return(
-            <div>all job  </div>
+            <div><div><JobsArray jobs={this.state.alljob} /></div>  </div>
         );
     }
 }
