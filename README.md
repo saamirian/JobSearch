@@ -1,4 +1,4 @@
-# purplebricksfeengineeres
+# JobSearch
 
 Instructions:
 1-Execute npm start to run the application.
